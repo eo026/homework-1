@@ -11,6 +11,9 @@ import datetime as dt
 from datetime import datetime
 
 
+alt.data_transformers.disable_max_rows()
+
+
 #-------------------#
 # IMPORT LOCAL DATA
 
@@ -40,11 +43,6 @@ st.header("Dashboard Gruppe E")
 # Header
 st.sidebar.header("This is my sidebar")
 
-# Make a slider
-satisfaction = st.sidebar.slider('What is your life satisfaction?', 0, 10, 1)
-
-# Show output of slider selection
-st.sidebar.write("My life satisfaction is around ", satisfaction, 'points')
 
 #-------------------#
 # BODY
