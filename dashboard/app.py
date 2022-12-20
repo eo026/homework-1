@@ -116,7 +116,7 @@ st.subheader("Normalized Stacked Bar Chart")
 df['State'] = df['State'].astype("category")
 df['Gender'] = df['Gender'].astype("category")
 
-alt.Chart(df).mark_bar().encode(
+Chart3 = alt.Chart(df).mark_bar().encode(
     x=alt.X('count(Gender)', stack="normalize",
         axis=alt.Axis(title = "Proportion of male and female candidates")),
     y=alt.Y('State',
@@ -133,12 +133,13 @@ alt.Chart(df).mark_bar().encode(
     anchor='middle',
     color='black'
 )
+Chart3
 
 # Visualisierung 4
 st.subheader("Horizontal Stacked Bar Chart")
 
 df['Race 1'] = df['Race 1'].astype("category")
-alt.Chart(df).mark_bar().encode(
+Chart4 = alt.Chart(df).mark_bar().encode(
     x=alt.X('count(Race 1)',
         axis=alt.Axis(title = "Count")),
     y=alt.Y('State',
@@ -155,6 +156,7 @@ alt.Chart(df).mark_bar().encode(
     anchor='middle',
     color='black'
 )
+Chart4
 
 ###-------------------###
 # END OF APP
