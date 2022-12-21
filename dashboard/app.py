@@ -47,11 +47,11 @@ st.sidebar.header("This is my sidebar")
 #-------------------#
 # BODY
 
-st.write("Take a look at my data")
+st.write("Dies sind unsere Daten")
 # Show static DataFrame
 st.dataframe(df)
 
-st.write("Take a look at my chart")
+st.write("Hier sehen Sie unsere Visualisierungen")
 
 #Visualisierung 1
 
@@ -110,6 +110,7 @@ ChartState = alt.Chart(df).mark_bar().encode(
 )
 ChartState
 
+
 # Visualisierung 3
 st.subheader("Normalized Stacked Bar Chart")
 
@@ -157,6 +158,8 @@ Chart4 = alt.Chart(df).mark_bar().encode(
     color='black'
 )
 Chart4
+
+
 
 ###-------------------###
 # END OF APP
