@@ -41,7 +41,8 @@ st.header("Dashboard Gruppe E")
 # SIDEBAR
 
 # Header
-st.sidebar.header("This is my sidebar")
+st.sidebar.header("Unsere Sidebar")
+satisfaction = st.sidebar.slider('Wie viele Visualisierungen finden Sie hilfreich?', 0, 4, 1)
 
 
 #-------------------#
